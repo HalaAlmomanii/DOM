@@ -17,6 +17,25 @@
     </style>
 </head>
 <body>
-<div id="mydiv">Hello world</div>
+<div id="mydiv" onmouseover="func()" onmouseout="rest()">Hello world</div>
+
+
+
+
+<script> 
+var v=document.getElementById("mydiv")
+var x="hello world"
+function func(){
+    
+    v.innerHTML="Can i help you?"
+}
+
+function rest (){
+    v.innerHTML=x
+    
+}
+
+</script>
 </body>
+
 </html>

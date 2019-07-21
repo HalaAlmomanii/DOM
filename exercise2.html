@@ -15,6 +15,29 @@
     </script>
 </head>
 <body>
-<div id="mydiv"></div>
+<div id="mydiv" style="background-color: blue" onclick="f()"></div>
+
+
+<script>
+var first=document.getElementById("mydiv")
+
+function f(){
+    var r=Math.floor(Math.random()*255)
+    var g=Math.floor(Math.random()*100)
+    var b =Math.floor(Math.random()*115)
+ var rgb='rgb(' + r + ',' + g + ',' + b + ')'
+ console.log(rgb)
+    // if(first.style.backgroundColor==="blue")
+    // return first.style="background-color:red"
+    
+    // if(first.style.backgroundColor==="red")
+    // return first.style.backgroundColor="green"
+   
+    // if(first.style.backgroundColor==="green")
+   return first.style.backgroundColor=rgb
+   
+
+}
+</script>
 </body>
 </html>
